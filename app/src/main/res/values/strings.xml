@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">河长巡查系统</string>
+    <string name="partrol_name">巡查</string>
+    <string name="notification_name">通知公告</string>
+    <string name="assess_name">考核管理</string>
+    <string name="personal_name">个人中心</string>
+
+    <string name="home_rains">水雨情</string>
+    <string name="home_rivers">河湖信息</string>
+    <string name="home_contacts">通讯录</string>
+    <string name="home_myTask">任务列表</string>
+    <string name="home_problemList">上报记录</string>
+    <string name="home_patrolList">巡查信息</string>
+
+    <string name="no_net"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="take_photo">
+        <item>拍照</item>
+        <item>本地相册</item>
+    </string-array>
+
+
+    <string name="score">打分评估</string>
+    <string name="zdkysUsers">选择支队科研所人员</string>
+    <string name="title_activity_river_detail">RiverDetailActivity</string>
+</resources>

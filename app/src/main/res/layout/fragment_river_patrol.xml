@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.RiverPatrolFragment">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_riverPatrol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@color/colorPrimary">
+
+
+                <TextView
+                    android:id="@+id/tv_riverPatrol_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/partrol_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_riverPatrol_layer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:padding="@dimen/dp_12"
+                    android:src="@drawable/ic_layer"
+                    tools:ignore="VectorDrawableCompat" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.amap.api.maps.MapView
+                    android:id="@+id/gdMapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_riverPatrol_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_12"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_riverPatrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/patrol_bg">
+
+                    <Button
+                        android:id="@+id/riverPatrol11"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:paddingTop="28dp"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_riverPatrol_begin"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/patrol_start"
+                        android:paddingTop="28dp"
+                        android:text="开始巡查"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_riverPatrol_end"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/patrol_end"
+                        android:paddingTop="28dp"
+                        android:text="结束巡查"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_riverPatrol_takephoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="35dp"
+                        android:drawableTop="@drawable/ic_patrol_takephoto"
+                        android:text="拍照"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_riverPatrol_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/riverPatrol11"
+                        android:drawableTop="@drawable/ic_patrol_report"
+                        android:text="问题上报"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/dp_12"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/ib_riverPatrol_zoomIn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_map_jia"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <ImageButton
+                        android:id="@+id/ib_riverPatrol_zoomOut"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_map_jian"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/ib_riverPatrol_nowLocation"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_location"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/ib_riverPatrol_huifu"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_chongzhi"
+                        tools:ignore="VectorDrawableCompat" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <include layout="@layout/drawer_layout" />
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

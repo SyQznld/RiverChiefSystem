@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="com.appler.riverchiefsystem.ui.fragment.HomeFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:layout_margin="@dimen/dp_10"
+                        app:title_background="#eee" />
+
+                    <TextView
+                        android:id="@+id/tv_gps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_12"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/tv_yuqing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_rains"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="@string/home_rains" />
+
+                        <TextView
+                            android:id="@+id/tv_rivers"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_rivers"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="@string/home_rivers" />
+
+                        <TextView
+                            android:id="@+id/tv_contacts"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_contact"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="@string/home_contacts" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+
+
+
+                        <TextView
+                            android:id="@+id/tv_problemList"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_report"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="上报问题" />
+
+                        <TextView
+                            android:id="@+id/tv_myTask"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_task"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="我的任务" />
+
+
+                        <TextView
+                            android:id="@+id/tv_patrolList"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_patrol"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:text="巡查记录" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/list_height">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_12"
+                        android:text="待办任务"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawablePadding="5dp"
+                            android:text="查看全部" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_arrow_right"
+                            tools:ignore="VectorDrawableCompat" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/srl_hometodo_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#efefef">
+
+                    <com.scwang.smartrefresh.header.MaterialHeader
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp" />
+
+                    <com.fingdo.statelayout.StateLayout
+                        android:id="@+id/sl_home_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_home_task"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </com.fingdo.statelayout.StateLayout>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#eee" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

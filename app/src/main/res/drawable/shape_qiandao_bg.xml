@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<layer-list--><!--xmlns:android="http://schemas.android.com/apk/res/android">--><!--<item>--><!--<shape>--><!--<stroke--><!--android:width="25dp"--><!--android:color="@color/qiandao"/>&lt;!&ndash;边框颜色&ndash;&gt;--><!--<solid android:color="@color/qiandao" />&lt;!&ndash;填充色&ndash;&gt;--><!--<corners--><!--android:radius="25dp"/>--><!--</shape>--><!--</item>--><!--</layer-list>-->
+
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <solid android:color="@color/qiandao" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/qiandao" />
+
+       
+    <size
+        android:width="20dp"
+        android:height="20dp" />
+
+</shape>

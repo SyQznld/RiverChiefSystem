@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_nextday_week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:drawableLeft="@mipmap/w00"
+        android:drawablePadding="7dp"
+        android:layout_gravity="center"
+        android:id="@+id/tv_nextday_weather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_nextday_temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:id="@+id/tv_nextday_wind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

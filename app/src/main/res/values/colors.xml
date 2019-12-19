@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#5e79f7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent" tools:ignore="MissingDefaultResource">#FF4081</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1296db</color>
+    <color name="colorRedBg">#fa5148</color>
+    <color name="colorUnreadBg">#E84E40</color>
+    <color name="textcolor">#444444</color>
+    <color name="background">#f4f4f4</color>
+
+
+    <color name="login_button">#3b77ff</color>
+    <color name="login_edit">#9195b8</color>
+    <color name="transparent">#7f3C3F41</color>
+    <color name="colorHui">#eeeeee</color>
+    <color name="colorH">#666666</color>
+
+
+    <!-- background -->
+    <color name="bg">#FFF5F5F5</color>
+    <color name="bg_pressed">#FFF2F2F2</color>
+
+    <!-- material design black font color -->
+    <color name="font_black_0">#212121</color>
+    <color name="font_black_1">#424242</color>
+    <color name="font_black_2">#616161</color>
+    <color name="font_black_3">#757575</color>
+    <color name="font_black_4">#9e9e9e</color>
+    <color name="font_black_5">#bdbdbd</color>
+    <color name="font_black_6">#e0e0e0</color>
+    <color name="font_black_7">#e4e4e4</color>
+
+    <!-- divider -->
+    <color name="divider_1">#e2e2e2</color>
+    <color name="divider_2">#e6e6e6</color>
+
+    <!-- common -->
+    <color name="half_transparent">#8f000000</color>
+
+
+    <color name="qiandao">#FCB058</color>
+    <color name="qiantui">#68D3CE</color>
+
+
+
+    <color name="blue_100">#F0FFFF</color>
+    <color name="blue_200">#87CEFF</color>
+    <color name="blue_300">#64b5f6</color>
+
+    <color name="blue_400">#42a5f5</color>
+
+    <color name="blue_500">#2196f3</color>
+
+    <color name="blue_600">#1e88e5</color>
+    <color name="green_50">#e8f5e9</color>
+
+    <color name="green_100">#c8e6c9</color>
+
+    <color name="green_200">#a5d6a7</color>
+
+    <color name="green_300">#81c784</color>
+
+    <color name="green_400">#66bb6a</color>
+
+    <color name="green_500">#4caf50</color>
+
+
+
+
+    <color name="purple_50">#f3e5f5</color>
+
+    <color name="purple_100">#e1bee7</color>
+
+    <color name="purple_200">#ce93d8</color>
+
+    <color name="purple_300">#ba68c8</color>
+
+    <color name="purple_400">#ab47bc</color>
+
+</resources>
